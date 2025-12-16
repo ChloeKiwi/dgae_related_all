@@ -1,0 +1,52 @@
+
+==================================================
+Results for sbm
+Sample metrics (mean±std):
+  degree: 0.768976±0.018931
+  cluster: 1.113365±0.020492
+  orbit: 0.379043±0.022566
+  avg: 0.753795±0.016882
+
+Sample novel metrics (mean±std):
+  uniqueness: 1.000000±0.000000
+  novelty: 1.000000±0.000000
+
+Sample time:
+  2.0086
+
+Trainset metrics (mean±std):
+  degree: 0.015459±0.002963
+  cluster: 0.003861±0.001050
+  orbit: 0.045140±0.002227
+  avg: 0.021487±0.001941
+
+Trainset novel metrics (mean±std):
+  uniqueness: 1.000000±0.000000
+  novelty: 1.000000±0.000000
+
+Individual run results:
+Run 1 (seed 42):
+  Sample: {'degree': 0.75662, 'cluster': 1.089518, 'orbit': 0.347529, 'avg': 0.731222}
+  Sample novel: {'novelty': 1.0, 'uniqueness': 1.0}
+  Trainset: {'degree': 0.018273, 'cluster': 0.005472, 'orbit': 0.045999, 'avg': 0.023248}
+  Trainset novel: {'novelty': 1.0, 'uniqueness': 1.0}
+Run 2 (seed 43):
+  Sample: {'degree': 0.792665, 'cluster': 1.141327, 'orbit': 0.390155, 'avg': 0.774716}
+  Sample novel: {'novelty': 1.0, 'uniqueness': 1.0}
+  Trainset: {'degree': 0.019039, 'cluster': 0.004322, 'orbit': 0.049058, 'avg': 0.02414}
+  Trainset novel: {'novelty': 1.0, 'uniqueness': 1.0}
+Run 3 (seed 44):
+  Sample: {'degree': 0.762367, 'cluster': 1.093996, 'orbit': 0.357924, 'avg': 0.738096}
+  Sample novel: {'novelty': 1.0, 'uniqueness': 1.0}
+  Trainset: {'degree': 0.015847, 'cluster': 0.003325, 'orbit': 0.044405, 'avg': 0.021192}
+  Trainset novel: {'novelty': 1.0, 'uniqueness': 1.0}
+Run 4 (seed 45):
+  Sample: {'degree': 0.743996, 'cluster': 1.13234, 'orbit': 0.392008, 'avg': 0.756115}
+  Sample novel: {'novelty': 1.0, 'uniqueness': 1.0}
+  Trainset: {'degree': 0.012004, 'cluster': 0.003882, 'orbit': 0.043139, 'avg': 0.019675}
+  Trainset novel: {'novelty': 1.0, 'uniqueness': 1.0}
+Run 5 (seed 46):
+  Sample: {'degree': 0.789232, 'cluster': 1.109643, 'orbit': 0.407598, 'avg': 0.768824}
+  Sample novel: {'novelty': 1.0, 'uniqueness': 1.0}
+  Trainset: {'degree': 0.012132, 'cluster': 0.002306, 'orbit': 0.043097, 'avg': 0.019178}
+  Trainset novel: {'novelty': 1.0, 'uniqueness': 1.0}

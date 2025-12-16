@@ -1,0 +1,45 @@
+program: main.py
+method: bayes
+metric:
+  name: val_loss  # 或其他你想优化的指标
+  goal: minimize
+parameters:
+  model.encoder.n_layers:
+    values: [4,6,8,16]
+  model.encoder.nhf:
+    values: [32, 64, 128, 256]
+  model.encoder.mlp_hidden_size:
+    values: [32, 64, 128, 256]
+  model.encoder.mlp_n_layers:
+    values: [2, 3, 4]
+  # model.decoder.n_layers:
+  #   values: [4,6,8,16]
+  # model.decoder.nhf:
+  #   values: [32, 64, 128, 256]
+  # model.decoder.mlp_hidden_size:
+  #   values: [32, 64, 128, 256]
+  # model.decoder.mlp_n_layers:
+  #   values: [2, 3, 4]
+  model.quantizer.init_steps:
+    values: [0, 100]
+  model.quantizer.codebook_size:
+    values: [256, 512, 1024]
+  # model.dropout:
+  #   min: 0.1
+  #   max: 0.5
+  #   distribution: uniform
+  training.learning_rate:
+    min: 0.0001
+    max: 0.01
+    distribution: log_uniform
+  
+early_terminate:
+  type: hyperband
+  min_iter: 5
+  eta: 2
+
+# 其他固定参数
+command:
+  - ${program}
+  - --dataset=enzymes
+  - --work_type=train_autoencoder

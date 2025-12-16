@@ -1,0 +1,20 @@
+
+==================================================
+Recon Results for grid
+Recon metrics (mean±std):
+  degree: 0.111341±0.018076
+  cluster: 0.002243±0.001424
+  orbit: 0.118752±0.024257
+  avg: 0.077445±0.011299
+
+Individual run results:
+Run 1 (seed 42):
+  Recon: {'degree': 0.101554, 'cluster': 0.0004, 'orbit': 0.076747, 'avg': 0.059567}
+Run 2 (seed 43):
+  Recon: {'degree': 0.114637, 'cluster': 0.002211, 'orbit': 0.152656, 'avg': 0.089835}
+Run 3 (seed 44):
+  Recon: {'degree': 0.112539, 'cluster': 0.004608, 'orbit': 0.119452, 'avg': 0.078866}
+Run 4 (seed 45):
+  Recon: {'degree': 0.086497, 'cluster': 0.002715, 'orbit': 0.122826, 'avg': 0.070679}
+Run 5 (seed 46):
+  Recon: {'degree': 0.14148, 'cluster': 0.001281, 'orbit': 0.122079, 'avg': 0.08828}

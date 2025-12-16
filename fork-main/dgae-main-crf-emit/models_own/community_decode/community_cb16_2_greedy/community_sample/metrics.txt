@@ -1,0 +1,119 @@
+
+==================================================
+Results for community
+Sample metrics (mean±std):
+  MMD metrics:
+    degree: 0.053873±0.003330
+    cluster: 0.028684±0.003262
+    orbit: 0.016376±0.011979
+    mmd_avg: 0.032978±0.004727
+  Novel metrics:
+    novelty: 1.000000±0.000000
+    uniqueness: 0.205005±0.007993
+
+Trainset metrics (mean±std):
+  MMD metrics:
+    degree: 0.030537±0.004625
+    cluster: 0.042897±0.007769
+    orbit: 0.005599±0.001637
+    mmd_avg: 0.026345±0.004600
+  Novel metrics:
+    novelty: 0.453125±0.029646
+    uniqueness: 0.523810±0.030117
+
+Individual run results:
+Run 1 (seed 42):
+  Sample:
+    MMD metrics:
+      degree: 0.052838
+      cluster: 0.027995
+      orbit: 0.032357
+      mmd_avg: 0.037730
+    Novel metrics:
+      novelty: 1.000000
+      uniqueness: 0.212212
+  Trainset:
+    MMD metrics:
+      degree: 0.032450
+      cluster: 0.047819
+      orbit: 0.005002
+      mmd_avg: 0.028424
+    Novel metrics:
+      novelty: 0.421875
+      uniqueness: 0.492063
+Run 2 (seed 43):
+  Sample:
+    MMD metrics:
+      degree: 0.052894
+      cluster: 0.031157
+      orbit: 0.018298
+      mmd_avg: 0.034116
+    Novel metrics:
+      novelty: 1.000000
+      uniqueness: 0.210210
+  Trainset:
+    MMD metrics:
+      degree: 0.038612
+      cluster: 0.055835
+      orbit: 0.008825
+      mmd_avg: 0.034424
+    Novel metrics:
+      novelty: 0.468750
+      uniqueness: 0.539683
+Run 3 (seed 44):
+  Sample:
+    MMD metrics:
+      degree: 0.054288
+      cluster: 0.032918
+      orbit: 0.001416
+      mmd_avg: 0.029541
+    Novel metrics:
+      novelty: 1.000000
+      uniqueness: 0.209209
+  Trainset:
+    MMD metrics:
+      degree: 0.027247
+      cluster: 0.035613
+      orbit: 0.004946
+      mmd_avg: 0.022602
+    Novel metrics:
+      novelty: 0.421875
+      uniqueness: 0.492063
+Run 4 (seed 45):
+  Sample:
+    MMD metrics:
+      degree: 0.049575
+      cluster: 0.023376
+      orbit: 0.004173
+      mmd_avg: 0.025708
+    Novel metrics:
+      novelty: 1.000000
+      uniqueness: 0.190190
+  Trainset:
+    MMD metrics:
+      degree: 0.028745
+      cluster: 0.038383
+      orbit: 0.004970
+      mmd_avg: 0.024033
+    Novel metrics:
+      novelty: 0.453125
+      uniqueness: 0.523810
+Run 5 (seed 46):
+  Sample:
+    MMD metrics:
+      degree: 0.059771
+      cluster: 0.027976
+      orbit: 0.025634
+      mmd_avg: 0.037794
+    Novel metrics:
+      novelty: 1.000000
+      uniqueness: 0.203203
+  Trainset:
+    MMD metrics:
+      degree: 0.025631
+      cluster: 0.036834
+      orbit: 0.004254
+      mmd_avg: 0.022240
+    Novel metrics:
+      novelty: 0.500000
+      uniqueness: 0.571429

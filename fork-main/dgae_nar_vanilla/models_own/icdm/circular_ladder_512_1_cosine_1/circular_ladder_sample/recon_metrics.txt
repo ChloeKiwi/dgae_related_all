@@ -1,0 +1,20 @@
+
+==================================================
+Recon Results for circular_ladder
+Recon metrics (mean±std):
+  degree: 0.140668±0.048043
+  cluster: 1.562008±0.075684
+  orbit: 0.170017±0.009181
+  avg: 0.624231±0.026940
+
+Individual run results:
+Run 1 (seed 42):
+  Recon: {'degree': 0.109409, 'cluster': 1.583693, 'orbit': 0.174772, 'avg': 0.622625}
+Run 2 (seed 43):
+  Recon: {'degree': 0.190775, 'cluster': 1.460159, 'orbit': 0.16623, 'avg': 0.605721}
+Run 3 (seed 44):
+  Recon: {'degree': 0.064484, 'cluster': 1.623289, 'orbit': 0.166038, 'avg': 0.617937}
+Run 4 (seed 45):
+  Recon: {'degree': 0.151941, 'cluster': 1.488194, 'orbit': 0.15803, 'avg': 0.599388}
+Run 5 (seed 46):
+  Recon: {'degree': 0.18673, 'cluster': 1.654707, 'orbit': 0.185016, 'avg': 0.675484}

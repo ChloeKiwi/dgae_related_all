@@ -1,0 +1,20 @@
+
+==================================================
+Recon Results for enzymes
+Recon metrics (mean±std):
+  degree: 0.010387±0.000289
+  cluster: 0.013599±0.001480
+  orbit: 0.002049±0.000148
+  avg: 0.008678±0.000510
+
+Individual run results:
+Run 1 (seed 42):
+  Recon: {'degree': 0.010211, 'cluster': 0.012552, 'orbit': 0.002113, 'avg': 0.008292}
+Run 2 (seed 43):
+  Recon: {'degree': 0.010551, 'cluster': 0.011314, 'orbit': 0.001767, 'avg': 0.007877}
+Run 3 (seed 44):
+  Recon: {'degree': 0.010877, 'cluster': 0.013995, 'orbit': 0.002182, 'avg': 0.009018}
+Run 4 (seed 45):
+  Recon: {'degree': 0.01009, 'cluster': 0.014766, 'orbit': 0.002045, 'avg': 0.008967}
+Run 5 (seed 46):
+  Recon: {'degree': 0.010208, 'cluster': 0.015366, 'orbit': 0.002137, 'avg': 0.009237}

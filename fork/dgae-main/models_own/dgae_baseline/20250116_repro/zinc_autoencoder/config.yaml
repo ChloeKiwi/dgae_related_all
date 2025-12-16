@@ -1,0 +1,110 @@
+wandb_version: 1
+
+data:
+  desc: null
+  value:
+    data: ZINC250k
+    dir: ./data
+    max_node_num: 38
+    max_feat_num: 9
+    add_spectral_feat: true
+    add_cycles_feat: true
+    add_path_feat: true
+    add_random_feat: true
+training:
+  desc: null
+  value:
+    log: false
+    batch_size: 32
+    learning_rate: 0.001
+    lr_decay: 0.5
+    decay_iteration: 25000
+    beta1: 0.9
+    beta2: 0.99
+    n_iter: 1000000
+    epochs: 250
+    betas:
+    - 0.9
+    - 0.99
+model:
+  desc: null
+  value:
+    encoder:
+      name: GNN_PYG
+      n_layers: 4
+      nhf: 32
+      mlp_hidden_size: 128
+      mlp_n_layers: 3
+      add_input_noise: false
+      skip_connection: true
+      normalization: batch_norm
+    decoder:
+      name: GNN
+      n_layers: 4
+      nhf: 32
+      mlp_hidden_size: 128
+      mlp_n_layers: 3
+      skip_connection: true
+      normalization: batch_norm
+    quantizer:
+      name: Quantizer
+      nz: 8
+      codebook_size: 32
+      nc: 2
+      commitment_cost: 0.25
+      decay: 0.99
+      epsilon: 1.0e-05
+    gamma: 0.1
+log:
+  desc: null
+  value:
+    n_loggin_steps: 1000
+    n_loggin_epochs: 1
+    wandb: online
+dataset:
+  desc: null
+  value: zinc
+work_type:
+  desc: null
+  value: train_autoencoder
+train_prior:
+  desc: null
+  value: false
+sample:
+  desc: null
+  value: false
+model_folder:
+  desc: null
+  value: run-20230628_182605-gpdewnzq
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.11
+    cli_version: 0.15.3
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1689153965.78987
+    t:
+      1:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      - 77
+      2:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      - 77
+      3:
+      - 3
+      - 16
+      - 23
+      4: 3.10.11
+      5: 0.15.3
+      8:
+      - 5

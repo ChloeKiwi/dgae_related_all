@@ -1,0 +1,31 @@
+
+==================================================
+Results for community
+Sample metrics (mean±std):
+  degree: 0.035202±0.002453
+  cluster: 0.042561±0.004260
+  orbit: 0.006141±0.000618
+  avg: 0.027968±0.002239
+
+Trainset metrics (mean±std):
+  degree: 0.030537±0.004625
+  cluster: 0.042897±0.007769
+  orbit: 0.065887±0.121598
+  avg: 0.046440±0.039699
+
+Individual run results:
+Run 1 (seed 42):
+  Sample: {'degree': 0.03433, 'cluster': 0.042473, 'orbit': 0.005292, 'avg': 0.027365}
+  Trainset: {'degree': 0.03245, 'cluster': 0.047819, 'orbit': 0.005002, 'avg': 0.028424}
+Run 2 (seed 43):
+  Sample: {'degree': 0.037287, 'cluster': 0.049842, 'orbit': 0.006419, 'avg': 0.031183}
+  Trainset: {'degree': 0.038612, 'cluster': 0.055835, 'orbit': 0.006152, 'avg': 0.033533}
+Run 3 (seed 44):
+  Sample: {'degree': 0.035921, 'cluster': 0.041146, 'orbit': 0.006769, 'avg': 0.027945}
+  Trainset: {'degree': 0.027247, 'cluster': 0.035613, 'orbit': 0.004946, 'avg': 0.022602}
+Run 4 (seed 45):
+  Sample: {'degree': 0.030876, 'cluster': 0.036589, 'orbit': 0.005514, 'avg': 0.024326}
+  Trainset: {'degree': 0.028745, 'cluster': 0.038383, 'orbit': 0.309079, 'avg': 0.125402}
+Run 5 (seed 46):
+  Sample: {'degree': 0.037598, 'cluster': 0.042755, 'orbit': 0.006711, 'avg': 0.029021}
+  Trainset: {'degree': 0.025631, 'cluster': 0.036834, 'orbit': 0.004254, 'avg': 0.02224}

@@ -1,0 +1,58 @@
+
+data:
+  data: 'ego'
+  dir: './data'
+  max_node_num: 18
+  min_node_num: 4
+  max_feat_num: 0
+  add_syn_feat: True
+  add_random_feat: True
+  test_split: 0.2
+
+training:
+  log: False
+  batch_size: 32
+  learning_rate: 0.001
+  lr_decay: 0.5
+  decay_iteration: 10000
+  beta1: 0.9
+  beta2: 0.99
+  n_iter: 1_000_000
+  epochs: 5000
+  
+model:
+  encoder:
+    name: GNN_PYG
+    n_layers: 2
+    nhf: 32
+    mlp_hidden_size: 64
+    mlp_n_layers: 2
+    add_input_noise: False
+    skip_connection: True
+    normalization: batch_norm
+  decoder:
+    name: GNN
+    n_layers: 2
+    nhf: 32
+    mlp_hidden_size: 64
+    mlp_n_layers: 2
+    skip_connection: True
+    normalization: batch_norm
+  quantizer:
+    name: Quantizer
+    nz: 8
+    codebook_size: 8
+    nc: 2
+    commitment_cost: 0.25
+    decay: 0.99
+    epsilon: 0.000_01
+  gamma: 0.1
+
+log:
+    n_loggin_steps: 1_000_000
+    n_loggin_epochs: 100
+    wandb: False
+     
+
+
+

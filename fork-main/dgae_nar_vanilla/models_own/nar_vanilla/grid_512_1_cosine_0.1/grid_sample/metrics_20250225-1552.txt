@@ -1,0 +1,52 @@
+
+==================================================
+Results for grid
+Sample metrics (mean±std):
+  degree: 1.996934±0.000000
+  cluster: 0.000000±0.000000
+  orbit: 1.005740±0.000000
+  avg: 1.000891±0.000000
+
+Sample novel metrics (mean±std):
+  uniqueness: 0.000000±0.000000
+  novelty: 1.000000±0.000000
+
+Sample time:
+  5.7982
+
+Trainset metrics (mean±std):
+  degree: 0.000077±0.000000
+  cluster: 0.000000±0.000000
+  orbit: 0.000073±0.000000
+  avg: 0.000050±0.000000
+
+Trainset novel metrics (mean±std):
+  uniqueness: 0.620253±0.000000
+  novelty: 0.687500±0.000000
+
+Individual run results:
+Run 1 (seed 42):
+  Sample: {'degree': 1.996934, 'cluster': 0.0, 'orbit': 1.00574, 'avg': 1.000891}
+  Sample novel: {'novelty': 1.0, 'uniqueness': 0.0}
+  Trainset: {'degree': 7.7e-05, 'cluster': 0.0, 'orbit': 7.3e-05, 'avg': 5e-05}
+  Trainset novel: {'novelty': 0.6875, 'uniqueness': 0.620253}
+Run 2 (seed 43):
+  Sample: {'degree': 1.996934, 'cluster': 0.0, 'orbit': 1.00574, 'avg': 1.000891}
+  Sample novel: {'novelty': 1.0, 'uniqueness': 0.0}
+  Trainset: {'degree': 7.7e-05, 'cluster': 0.0, 'orbit': 7.3e-05, 'avg': 5e-05}
+  Trainset novel: {'novelty': 0.6875, 'uniqueness': 0.620253}
+Run 3 (seed 44):
+  Sample: {'degree': 1.996934, 'cluster': 0.0, 'orbit': 1.00574, 'avg': 1.000891}
+  Sample novel: {'novelty': 1.0, 'uniqueness': 0.0}
+  Trainset: {'degree': 7.7e-05, 'cluster': 0.0, 'orbit': 7.3e-05, 'avg': 5e-05}
+  Trainset novel: {'novelty': 0.6875, 'uniqueness': 0.620253}
+Run 4 (seed 45):
+  Sample: {'degree': 1.996934, 'cluster': 0.0, 'orbit': 1.00574, 'avg': 1.000891}
+  Sample novel: {'novelty': 1.0, 'uniqueness': 0.0}
+  Trainset: {'degree': 7.7e-05, 'cluster': 0.0, 'orbit': 7.3e-05, 'avg': 5e-05}
+  Trainset novel: {'novelty': 0.6875, 'uniqueness': 0.620253}
+Run 5 (seed 46):
+  Sample: {'degree': 1.996934, 'cluster': 0.0, 'orbit': 1.00574, 'avg': 1.000891}
+  Sample novel: {'novelty': 1.0, 'uniqueness': 0.0}
+  Trainset: {'degree': 7.7e-05, 'cluster': 0.0, 'orbit': 7.3e-05, 'avg': 5e-05}
+  Trainset novel: {'novelty': 0.6875, 'uniqueness': 0.620253}

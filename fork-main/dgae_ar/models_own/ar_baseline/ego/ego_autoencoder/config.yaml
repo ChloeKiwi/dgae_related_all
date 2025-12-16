@@ -1,0 +1,74 @@
+data:
+  value:
+    add_random_feat: true
+    add_syn_feat: true
+    data: ego
+    dir: ./data
+    max_feat_num: 0
+    max_node_num: 18
+    min_node_num: 4
+    test_split: 0.2
+dataset:
+  value: ego
+device:
+  value: cuda:0
+exp_name:
+  value: ar_baseline
+gpu:
+  value: '0'
+log:
+  value:
+    n_loggin_epochs: 100
+    n_loggin_steps: 1000000
+    wandb: online
+model:
+  value:
+    decoder:
+      mlp_hidden_size: 64
+      mlp_n_layers: 2
+      n_layers: 2
+      name: GNN
+      nhf: 32
+      normalization: batch_norm
+      skip_connection: true
+    encoder:
+      add_input_noise: false
+      mlp_hidden_size: 64
+      mlp_n_layers: 2
+      n_layers: 2
+      name: GNN_PYG
+      nhf: 32
+      normalization: batch_norm
+      skip_connection: true
+    gamma: 0.1
+    quantizer:
+      codebook_size: 16
+      commitment_cost: 0.25
+      decay: 0.99
+      epsilon: 1.0e-05
+      init_steps: 0
+      name: Quantizer
+      nc: 1
+      nz: 8
+run_name:
+  value: ego
+sample:
+  value: false
+train_prior:
+  value: false
+training:
+  value:
+    batch_size: 32
+    beta1: 0.9
+    beta2: 0.99
+    betas: !!python/tuple
+    - 0.9
+    - 0.99
+    decay_iteration: 10000
+    epochs: 5000
+    learning_rate: 0.001
+    log: false
+    lr_decay: 0.5
+    n_iter: 1000000
+work_type:
+  value: train_autoencoder

@@ -1,0 +1,16 @@
+2024 1 7 
+实验1 vq quantizer + diffloss + mlm （修改loss）
+autoencoder：gnn编码后不使用vq，latents去作重构
+prior：学习latents分布，mae方式
+
+验证：
+Diffusion Loss, with  continuous-valued tokens, is better than its cross-entropy counterpart with discrete-valued tokens,  consistently observed across all variants of AR and MAR.
+Table 2: Flexibility of Diffusion Loss. Diffusion Loss can support different types of tokenizers.  
+(i) VQ tokenizers: we treat the continuous-valued latent before VQ as the tokens.
+代码改动：
+
+结论：
+
+
+
+

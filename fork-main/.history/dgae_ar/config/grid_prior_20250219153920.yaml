@@ -1,0 +1,27 @@
+
+training:
+  batch_size: 16
+  learning_rate: 0.00001
+  # learning_rate: 0.0001
+  lr_decay: 0.5
+  # decay_iteration: 10000
+  decay_iteration: 5000
+  beta1: 0.9
+  beta2: 0.999
+  n_iter: 1_000_000
+  # epochs: 2500
+  # epochs: 8000
+  epochs: 8000
+  sort_codebook: False
+  sort_indices: True
+
+transformer:
+  d_model: 512
+  num_heads: 16
+  n_blocks: 6
+
+log:
+    n_loggin_steps: 1000
+    n_loggin_epochs: 100
+    wandb: disabled
+    debug: False

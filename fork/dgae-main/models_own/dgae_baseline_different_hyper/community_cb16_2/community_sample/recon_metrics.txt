@@ -1,0 +1,20 @@
+
+==================================================
+Recon Results for community
+Recon metrics (mean±std):
+  degree: 0.005115±0.000222
+  cluster: 0.029255±0.005018
+  orbit: 0.006393±0.004020
+  avg: 0.013588±0.002838
+
+Individual run results:
+Run 1 (seed 42):
+  Recon: {'degree': 0.005305, 'cluster': 0.039165, 'orbit': 0.012887, 'avg': 0.019119}
+Run 2 (seed 43):
+  Recon: {'degree': 0.004914, 'cluster': 0.026732, 'orbit': 0.002073, 'avg': 0.01124}
+Run 3 (seed 44):
+  Recon: {'degree': 0.005451, 'cluster': 0.02807, 'orbit': 0.002199, 'avg': 0.011907}
+Run 4 (seed 45):
+  Recon: {'degree': 0.00499, 'cluster': 0.025576, 'orbit': 0.006981, 'avg': 0.012516}
+Run 5 (seed 46):
+  Recon: {'degree': 0.004914, 'cluster': 0.026732, 'orbit': 0.007825, 'avg': 0.013157}

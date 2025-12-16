@@ -1,0 +1,20 @@
+
+==================================================
+Recon Results for ba
+Recon metrics (mean±std):
+  degree: 0.142963±0.007289
+  cluster: 0.100169±0.004287
+  orbit: 0.077723±0.007487
+  avg: 0.106952±0.005661
+
+Individual run results:
+Run 1 (seed 42):
+  Recon: {'degree': 0.133877, 'cluster': 0.100312, 'orbit': 0.071812, 'avg': 0.102}
+Run 2 (seed 43):
+  Recon: {'degree': 0.151477, 'cluster': 0.107195, 'orbit': 0.085633, 'avg': 0.114768}
+Run 3 (seed 44):
+  Recon: {'degree': 0.139009, 'cluster': 0.093991, 'orbit': 0.069874, 'avg': 0.100958}
+Run 4 (seed 45):
+  Recon: {'degree': 0.138717, 'cluster': 0.101058, 'orbit': 0.073436, 'avg': 0.104404}
+Run 5 (seed 46):
+  Recon: {'degree': 0.151733, 'cluster': 0.098289, 'orbit': 0.087861, 'avg': 0.112628}

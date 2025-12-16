@@ -1,0 +1,17 @@
+
+data:
+  data: 'gnp'
+  dir: './data'
+  max_node_num: 97
+  min_node_num: 12
+  max_feat_num: 0
+  add_spectral_feat: True
+  add_cycles_feat: True
+  add_path_feat: True
+  add_random_feat: True
+  test_split: 0.2
+
+
+
+
+

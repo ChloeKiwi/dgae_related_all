@@ -1,0 +1,58 @@
+
+data:
+  data: 'ENZYMES'
+  dir: './data'
+  max_node_num: 125
+  min_node_num: 10
+  max_feat_num: 0
+  add_spectral_feat: True
+  add_cycles_feat: True
+  add_path_feat: True
+  add_random_feat: True
+  test_split: 0.2
+
+training:
+  log: False
+  batch_size: 16
+  learning_rate: 0.0005
+  lr_decay: 0.5
+  decay_iteration: 10000
+  beta1: 0.9
+  beta2: 0.99
+  n_iter: 100_000
+  epochs: 10000
+
+model:
+  encoder:
+    name: GNN_PYG
+    n_layers: 6
+    nhf: 32
+    mlp_hidden_size: 128
+    mlp_n_layers: 3
+    skip_connection: True
+    normalization: batch_norm
+  decoder:
+    name: GNN
+    n_layers: 6
+    nhf: 32
+    mlp_hidden_size: 128
+    mlp_n_layers: 3
+    skip_connection: True
+    normalization: batch_norm
+  quantizer:
+    name: Quantizer
+    nz: 8
+    codebook_size: 32
+    nc: 2
+    commitment_cost: 0.25
+    decay: 0.99
+    epsilon: 0.000_01
+    init_steps: 100
+  gamma: 0.1
+
+
+log:
+    n_loggin_steps: 100
+    n_loggin_epochs: 1
+    wandb: disabled
+    debug: False

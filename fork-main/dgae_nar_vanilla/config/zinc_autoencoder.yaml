@@ -1,0 +1,59 @@
+
+data:
+  data: ZINC250k
+  dir: './data'
+  max_node_num: 38
+  max_feat_num: 9
+  add_spectral_feat: True
+  add_cycles_feat: True
+  add_path_feat: True
+  add_random_feat: True
+
+training:
+  log: False
+  batch_size: 32
+  learning_rate: 0.001
+  lr_decay: 0.5
+  decay_iteration: 25000
+  beta1: 0.9
+  beta2: 0.99
+  n_iter: 1_000_000
+  epochs: 250
+  
+model:
+  encoder:
+    name: GNN_PYG
+    n_layers: 4
+    nhf: 32
+    mlp_hidden_size: 128
+    mlp_n_layers: 3
+    add_input_noise: False
+    skip_connection: True
+    normalization: batch_norm
+  decoder:
+    name: GNN
+    n_layers: 4
+    nhf: 32
+    mlp_hidden_size: 128
+    mlp_n_layers: 3
+    skip_connection: True
+    normalization: batch_norm
+  quantizer:
+    name: Quantizer
+    nz: 8
+    codebook_size: 32
+    nc: 2
+    turn_off: False
+    commitment_cost: 0.25
+    decay: 0.99
+    epsilon: 0.000_01
+    # init_steps: 0
+    init_steps: 100000 #same with default
+  gamma: 0.1
+
+log:
+    n_loggin_steps: 1000
+    n_loggin_epochs: 1
+    wandb: disabled  # disabled, offline or online
+    debug: False
+

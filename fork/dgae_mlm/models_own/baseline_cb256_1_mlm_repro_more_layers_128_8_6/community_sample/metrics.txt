@@ -1,0 +1,62 @@
+
+==================================================
+Results for community
+Sample metrics (mean±std):
+  degree: 0.103414±0.016924
+  cluster: 0.068388±0.012707
+  orbit: 0.020905±0.004066
+  avg: 0.064236±0.010954
+
+Trainset metrics (mean±std):
+  degree: 0.035103±0.008440
+  cluster: 0.044021±0.009139
+  orbit: 0.005991±0.002006
+  avg: 0.028372±0.006005
+
+Individual run results:
+Run 1 (seed 42):
+  Sample: {'degree': 0.118398, 'cluster': 0.081803, 'orbit': 0.025141, 'avg': 0.075114}
+  Trainset: {'degree': 0.028928, 'cluster': 0.044953, 'orbit': 0.004293, 'avg': 0.026058}
+Run 2 (seed 43):
+  Sample: {'degree': 0.073969, 'cluster': 0.051418, 'orbit': 0.013917, 'avg': 0.046435}
+  Trainset: {'degree': 0.051302, 'cluster': 0.054482, 'orbit': 0.009844, 'avg': 0.038543}
+Run 3 (seed 44):
+  Sample: {'degree': 0.11177, 'cluster': 0.081453, 'orbit': 0.023613, 'avg': 0.072279}
+  Trainset: {'degree': 0.035566, 'cluster': 0.050953, 'orbit': 0.005993, 'avg': 0.030837}
+Run 4 (seed 45):
+  Sample: {'degree': 0.117694, 'cluster': 0.071492, 'orbit': 0.022994, 'avg': 0.070727}
+  Trainset: {'degree': 0.029396, 'cluster': 0.0281, 'orbit': 0.004748, 'avg': 0.020748}
+Run 5 (seed 46):
+  Sample: {'degree': 0.09524, 'cluster': 0.055776, 'orbit': 0.018859, 'avg': 0.056625}
+  Trainset: {'degree': 0.030325, 'cluster': 0.041616, 'orbit': 0.005076, 'avg': 0.025672}
+
+==================================================
+Results for community
+Sample metrics (mean±std):
+  degree: 0.120475±0.004897
+  cluster: 0.109566±0.007226
+  orbit: 0.044243±0.001323
+  avg: 0.091428±0.003933
+
+Trainset metrics (mean±std):
+  degree: 0.029932±0.003624
+  cluster: 0.034870±0.005000
+  orbit: 0.004910±0.000889
+  avg: 0.023237±0.002919
+
+Individual run results:
+Run 1 (seed 42):
+  Sample: {'degree': 0.117765, 'cluster': 0.103374, 'orbit': 0.04376, 'avg': 0.0883}
+  Trainset: {'degree': 0.02953, 'cluster': 0.040036, 'orbit': 0.004052, 'avg': 0.024539}
+Run 2 (seed 43):
+  Sample: {'degree': 0.121728, 'cluster': 0.112754, 'orbit': 0.044946, 'avg': 0.093143}
+  Trainset: {'degree': 0.036444, 'cluster': 0.04075, 'orbit': 0.006432, 'avg': 0.027875}
+Run 3 (seed 44):
+  Sample: {'degree': 0.121043, 'cluster': 0.100068, 'orbit': 0.042154, 'avg': 0.087755}
+  Trainset: {'degree': 0.030378, 'cluster': 0.032638, 'orbit': 0.005116, 'avg': 0.022711}
+Run 4 (seed 45):
+  Sample: {'degree': 0.128344, 'cluster': 0.12052, 'orbit': 0.046157, 'avg': 0.09834}
+  Trainset: {'degree': 0.025814, 'cluster': 0.027308, 'orbit': 0.003985, 'avg': 0.019036}
+Run 5 (seed 46):
+  Sample: {'degree': 0.113493, 'cluster': 0.111114, 'orbit': 0.0442, 'avg': 0.089602}
+  Trainset: {'degree': 0.027492, 'cluster': 0.033619, 'orbit': 0.004967, 'avg': 0.022026}

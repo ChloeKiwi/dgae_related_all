@@ -1,0 +1,20 @@
+
+==================================================
+Recon Results for citeseer
+Recon metrics (mean±std):
+  degree: 0.026578±0.002576
+  cluster: 0.045896±0.003904
+  orbit: 0.000968±0.000094
+  avg: 0.024481±0.002078
+
+Individual run results:
+Run 1 (seed 42):
+  Recon: {'degree': 0.029466, 'cluster': 0.047449, 'orbit': 0.001047, 'avg': 0.025987}
+Run 2 (seed 43):
+  Recon: {'degree': 0.022177, 'cluster': 0.038191, 'orbit': 0.000925, 'avg': 0.020431}
+Run 3 (seed 44):
+  Recon: {'degree': 0.028823, 'cluster': 0.047826, 'orbit': 0.000844, 'avg': 0.025831}
+Run 4 (seed 45):
+  Recon: {'degree': 0.025929, 'cluster': 0.047064, 'orbit': 0.000919, 'avg': 0.024637}
+Run 5 (seed 46):
+  Recon: {'degree': 0.026497, 'cluster': 0.048951, 'orbit': 0.001103, 'avg': 0.025517}

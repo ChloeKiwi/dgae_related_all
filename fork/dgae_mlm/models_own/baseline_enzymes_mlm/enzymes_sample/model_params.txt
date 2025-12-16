@@ -1,0 +1,18 @@
+Transformer Parameters: 18,920,134 (18.92M)
+
+Parameters per component:
+tok_emb: 4,480 (4.48K)
+pe: 0 (0)
+ln: 256 (256)
+drop: 0 (0)
+mlp_inV: 263,296 (263.30K)
+mlp_inK: 263,296 (263.30K)
+mlp_inQ: 526,592 (526.59K)
+mlp_inZ: 526,592 (526.59K)
+blockIn: 1,975,296 (1.98M)
+layers: 9,876,480 (9.88M)
+mlp_out: 215,622 (215.62K)
+mlp_in: 2,304 (2.30K)
+mlp_q: 2,632,960 (2.63M)
+mlp_k: 1,316,480 (1.32M)
+mlp_v: 1,316,480 (1.32M)

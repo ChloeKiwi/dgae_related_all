@@ -1,0 +1,113 @@
+wandb_version: 1
+
+data:
+  desc: null
+  value:
+    data: ENZYMES
+    dir: ./data
+    max_node_num: 125
+    min_node_num: 10
+    max_feat_num: 0
+    add_spectral_feat: true
+    add_cycles_feat: true
+    add_path_feat: true
+    add_random_feat: true
+    test_split: 0.2
+training:
+  desc: null
+  value:
+    log: false
+    batch_size: 16
+    learning_rate: 0.001
+    lr_decay: 0.5
+    decay_iteration: 10000
+    beta1: 0.9
+    beta2: 0.99
+    n_iter: 100000
+    epochs: 10000
+    betas:
+    - 0.9
+    - 0.99
+model:
+  desc: null
+  value:
+    encoder:
+      name: GNN_PYG
+      n_layers: 6
+      nhf: 32
+      mlp_hidden_size: 128
+      mlp_n_layers: 3
+      skip_connection: true
+      normalization: batch_norm
+    decoder:
+      name: GNN
+      n_layers: 6
+      nhf: 32
+      mlp_hidden_size: 128
+      mlp_n_layers: 3
+      skip_connection: true
+      normalization: batch_norm
+    quantizer:
+      name: Quantizer
+      nz: 8
+      codebook_size: 32
+      nc: 2
+      commitment_cost: 0.25
+      decay: 0.99
+      epsilon: 1.0e-05
+      init_steps: 0
+    gamma: 0.1
+log:
+  desc: null
+  value:
+    n_loggin_steps: 100
+    n_loggin_epochs: 1
+    wandb: online
+    debug: false
+dataset:
+  desc: null
+  value: enzymes
+work_type:
+  desc: null
+  value: train_autoencoder
+train_prior:
+  desc: null
+  value: false
+sample:
+  desc: null
+  value: false
+model_folder:
+  desc: null
+  value: auto_encoder
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.11
+    cli_version: 0.15.3
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1692379701.434245
+    t:
+      1:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      - 77
+      2:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      - 77
+      3:
+      - 3
+      - 16
+      - 23
+      4: 3.10.11
+      5: 0.15.3
+      8:
+      - 5

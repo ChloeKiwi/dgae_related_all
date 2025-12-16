@@ -1,0 +1,52 @@
+
+==================================================
+Results for community
+Sample metrics (mean±std):
+  degree: 0.014200±0.000787
+  cluster: 0.059654±0.003196
+  orbit: 0.003713±0.000320
+  avg: 0.025856±0.000994
+
+Sample novel metrics (mean±std):
+  uniqueness: 0.141742±0.007560
+  novelty: 0.408400±0.012516
+
+Sample time:
+  0.1993
+
+Trainset metrics (mean±std):
+  degree: 0.037841±0.012709
+  cluster: 0.043070±0.014590
+  orbit: 0.006325±0.002385
+  avg: 0.029079±0.009862
+
+Trainset novel metrics (mean±std):
+  uniqueness: 0.504762±0.030779
+  novelty: 0.434375±0.030298
+
+Individual run results:
+Run 1 (seed 42):
+  Sample: {'degree': 0.014079, 'cluster': 0.065572, 'orbit': 0.003682, 'avg': 0.027778}
+  Sample novel: {'novelty': 0.425, 'uniqueness': 0.148148}
+  Trainset: {'degree': 0.055328, 'cluster': 0.063316, 'orbit': 0.009768, 'avg': 0.042804}
+  Trainset novel: {'novelty': 0.4375, 'uniqueness': 0.507937}
+Run 2 (seed 43):
+  Sample: {'degree': 0.014441, 'cluster': 0.05922, 'orbit': 0.003364, 'avg': 0.025675}
+  Sample novel: {'novelty': 0.405, 'uniqueness': 0.149149}
+  Trainset: {'degree': 0.021807, 'cluster': 0.02399, 'orbit': 0.003723, 'avg': 0.016507}
+  Trainset novel: {'novelty': 0.390625, 'uniqueness': 0.460317}
+Run 3 (seed 44):
+  Sample: {'degree': 0.01555, 'cluster': 0.055861, 'orbit': 0.003801, 'avg': 0.025071}
+  Sample novel: {'novelty': 0.414, 'uniqueness': 0.146146}
+  Trainset: {'degree': 0.049906, 'cluster': 0.055612, 'orbit': 0.008568, 'avg': 0.038029}
+  Trainset novel: {'novelty': 0.4375, 'uniqueness': 0.507937}
+Run 4 (seed 45):
+  Sample: {'degree': 0.013223, 'cluster': 0.058676, 'orbit': 0.003446, 'avg': 0.025115}
+  Sample novel: {'novelty': 0.411, 'uniqueness': 0.134134}
+  Trainset: {'degree': 0.029109, 'cluster': 0.03179, 'orbit': 0.004915, 'avg': 0.021938}
+  Trainset novel: {'novelty': 0.421875, 'uniqueness': 0.492063}
+Run 5 (seed 46):
+  Sample: {'degree': 0.013706, 'cluster': 0.058942, 'orbit': 0.00427, 'avg': 0.025639}
+  Sample novel: {'novelty': 0.387, 'uniqueness': 0.131131}
+  Trainset: {'degree': 0.033053, 'cluster': 0.040641, 'orbit': 0.004653, 'avg': 0.026116}
+  Trainset novel: {'novelty': 0.484375, 'uniqueness': 0.555556}

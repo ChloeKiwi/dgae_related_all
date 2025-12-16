@@ -1,0 +1,32 @@
+program: main.py
+method: bayes
+metric:
+  name: val_loss  # 或其他你想优化的指标
+  goal: minimize
+parameters:
+  model.encoder.n_layers:
+    values: [2, 3, 4, 6]
+  model.encoder.nhf: 
+  model.hidden_dim:
+    values: [32, 64, 128, 256]
+  model.num_layers:
+    values: [2, 3, 4]
+  model.dropout:
+    min: 0.1
+    max: 0.5
+    distribution: uniform
+  training.lr:
+    min: 0.0001
+    max: 0.01
+    distribution: log_uniform
+  
+early_terminate:
+  type: hyperband
+  min_iter: 5
+  eta: 2
+
+# 其他固定参数
+command:
+  - ${program}
+  - --config
+  - configs/vqgae.yaml  # 你的配置文件路径

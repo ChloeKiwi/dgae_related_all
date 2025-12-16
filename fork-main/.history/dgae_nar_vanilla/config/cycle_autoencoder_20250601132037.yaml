@@ -1,0 +1,71 @@
+data: 
+  data: 'grid'
+  dir: './data'
+  # batch_size: 4
+  # batch_size: 8
+  batch_size: 16
+  # batch_size: 32
+  test_split: 0.2
+  max_node_num: 495
+  min_node_num: 12
+  max_feat_num: 0
+  # init: deg
+  add_spectral_feat: True
+  add_cycles_feat: True
+  add_path_feat: True
+  add_random_feat: True
+
+training:
+  log: False
+  # batch_size: 8
+  # batch_size: 16
+  batch_size: 32
+  # learning_rate: 0.001
+  # lr_decay: 0.5
+  # decay_iteration: 10000
+  learning_rate: 0.0003
+  lr_decay: 0.5
+  decay_iteration: 5000
+  beta1: 0.9
+  beta2: 0.99
+  n_iter: 100_000
+  epochs: 200
+  
+model:
+  encoder:
+    name: GNN_PYG
+    n_layers: 6
+    nhf: 32
+    mlp_hidden_size: 128
+    mlp_n_layers: 3
+    skip_connection: True
+    normalization: batch_norm
+  decoder:
+    name: GNN
+    n_layers: 6
+    nhf: 32
+    mlp_hidden_size: 128
+    mlp_n_layers: 3
+    skip_connection: True
+    normalization: batch_norm
+  quantizer:
+    name: Quantizer
+    nz: 8
+    # codebook_size: 32
+    codebook_size: 128
+    nc: 2
+    # codebook_size: 256
+    # nc: 1
+    commitment_cost: 0.25
+    decay: 0.99
+    epsilon: 0.000_01
+    init_steps: 0
+    # init_steps: 100
+  gamma: 0.1
+
+
+log:
+    n_loggin_steps: 1000
+    n_loggin_epochs: 100
+    wandb: online
+    debug: False

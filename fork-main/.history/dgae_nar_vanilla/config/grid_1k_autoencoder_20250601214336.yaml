@@ -1,0 +1,17 @@
+data: 
+  data: 'grid_1k'
+  dir: './data'
+  # batch_size: 4
+  batch_size: 2
+  # batch_size: 16
+  test_split: 0.2
+  max_node_num: 1089
+  min_node_num: 12
+  max_feat_num:  0
+  # init: deg
+  add_spectral_feat: True
+  add_cycles_feat: True
+  add_path_feat: True
+  add_random_feat: True
+
+

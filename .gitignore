@@ -1,0 +1,46 @@
+# 大文件和模型文件
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.pkl
+*.pickle
+*.npz
+*.npy
+*.tar.gz
+*.zip
+
+# 数据文件
+data/raw/
+data/processed/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 虚拟环境
+venv/
+env/
+ENV/
+
+# wandb
+wandb/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 日志文件
+*.log
+
+# macOS
+.DS_Store
+
+# Git 相关（如果之前有.git目录）
+.git/
+

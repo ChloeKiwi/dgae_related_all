@@ -1,0 +1,31 @@
+
+==================================================
+Results for enzymes
+Sample metrics (mean±std):
+  degree: 0.020870±0.001284
+  cluster: 0.064946±0.002470
+  orbit: 0.002914±0.000365
+  avg: 0.029577±0.000984
+
+Trainset metrics (mean±std):
+  degree: 0.002539±0.000071
+  cluster: 0.013361±0.000800
+  orbit: 0.000752±0.000756
+  avg: 0.005550±0.000423
+
+Individual run results:
+Run 1 (seed 42):
+  Sample: {'degree': 0.020306, 'cluster': 0.069105, 'orbit': 0.002664, 'avg': 0.030692}
+  Trainset: {'degree': 0.002615, 'cluster': 0.012269, 'orbit': 0.000458, 'avg': 0.005114}
+Run 2 (seed 43):
+  Sample: {'degree': 0.022603, 'cluster': 0.063384, 'orbit': 0.003561, 'avg': 0.029849}
+  Trainset: {'degree': 0.002587, 'cluster': 0.012732, 'orbit': 0.000404, 'avg': 0.005241}
+Run 3 (seed 44):
+  Sample: {'degree': 0.019215, 'cluster': 0.0617, 'orbit': 0.002485, 'avg': 0.0278}
+  Trainset: {'degree': 0.002502, 'cluster': 0.014293, 'orbit': 0.000314, 'avg': 0.005703}
+Run 4 (seed 45):
+  Sample: {'degree': 0.020097, 'cluster': 0.065164, 'orbit': 0.002905, 'avg': 0.029389}
+  Trainset: {'degree': 0.002418, 'cluster': 0.014221, 'orbit': 0.00226, 'avg': 0.0063}
+Run 5 (seed 46):
+  Sample: {'degree': 0.022129, 'cluster': 0.065378, 'orbit': 0.002953, 'avg': 0.030153}
+  Trainset: {'degree': 0.002571, 'cluster': 0.013288, 'orbit': 0.000324, 'avg': 0.005394}

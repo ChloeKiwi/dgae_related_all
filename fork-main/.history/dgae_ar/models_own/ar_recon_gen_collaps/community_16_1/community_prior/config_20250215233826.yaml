@@ -1,0 +1,101 @@
+data:
+  value:
+    add_cycles_feat: true
+    add_path_feat: true
+    add_random_feat: true
+    add_spectral_feat: true
+    data: community
+    dir: ./data
+    max_feat_num: 0
+    max_node_num: 20
+    min_node_num: 12
+    test_split: 0.2
+dataset:
+  value: community
+device:
+  value: cuda:1
+exp_name:
+  value: ar_recon_gen_collaps
+gpu:
+  value: '1'
+log:
+  value:
+    debug: false
+    n_loggin_epochs: 100
+    n_loggin_steps: 1000
+    wandb: online
+model:
+  value:
+    decoder: !!python/object/new:easydict.EasyDict
+      dictitems:
+        mlp_hidden_size: 64
+        mlp_n_layers: 3
+        n_layers: 2
+        name: GNN
+        nhf: 32
+        normalization: batch_norm
+        skip_connection: true
+      state:
+        mlp_hidden_size: 64
+        mlp_n_layers: 3
+        n_layers: 2
+        name: GNN
+        nhf: 32
+        normalization: batch_norm
+        skip_connection: true
+    encoder: 
+        mlp_hidden_size: 64
+        mlp_n_layers: 3
+        n_layers: 2
+        name: GNN_PYG
+        nhf: 32
+        normalization: batch_norm
+        skip_connection: true
+    gamma: 0.1
+    quantizer: !!python/object/new:easydict.EasyDict
+      dictitems:
+        codebook_size: 16
+        commitment_cost: 0.25
+        decay: 0.99
+        epsilon: 1e-05
+        init_steps: 0
+        name: Quantizer
+        nc: 1
+        nz: 8
+      state:
+        codebook_size: 16
+        commitment_cost: 0.25
+        decay: 0.99
+        epsilon: 1e-05
+        init_steps: 0
+        name: Quantizer
+        nc: 1
+        nz: 8
+run_name:
+  value: community_16_1
+sample:
+  value: false
+train_prior:
+  value: true
+training:
+  value:
+    batch_size: 32
+    beta1: 0.9
+    beta2: 0.99
+    betas: !!python/tuple
+    - 0.9
+    - 0.99
+    decay_iteration: 10000
+    epochs: 2500
+    learning_rate: 0.001
+    lr_decay: 0.5
+    n_iter: 1000000
+    sort_codebook: false
+    sort_indices: true
+transformer:
+  value:
+    d_model: 64
+    n_blocks: 3
+    num_heads: 16
+work_type:
+  value: train_prior

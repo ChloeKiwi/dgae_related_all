@@ -1,0 +1,28 @@
+# training:
+#   # ... 其他参数保持不变 ...
+#   epochs: 7500       # 增加训练轮数
+
+# # 其他配置保持不变 
+
+training:
+  batch_size: 32
+  learning_rate: 0.001
+  lr_decay: 0.5
+  decay_iteration: 10000
+  beta1: 0.9
+  beta2: 0.99
+  n_iter: 1_000_000
+  epochs: 7500
+  sort_codebook: False
+  sort_indices: True
+
+transformer:
+  d_model: 512
+  num_heads: 16
+  n_blocks: 5
+
+log:
+    n_loggin_steps: 1000
+    n_loggin_epochs: 100
+    wandb: online
+    debug: False
