@@ -58,6 +58,7 @@ class Trainer:
             self.sort_indices = utils.func.sort_indices
         elif config.train_prior and not config.training.sort_indices:
             self.sort_indices = None
+        
         # for mlm
         pad_token = self.cb_size
         self.use_mask = config.use_mask
@@ -361,7 +362,7 @@ class Trainer:
 
                 if self.mol_data:
                     log_mol_metrics(annots, adjs, self.dataset, key='epoch') #adjs:bs,4,9,9
-                # else: #! 是否计算重构mmd、绘制重构图
+                # else: # 是否计算重构mmd、绘制重构图
                 #     # metrics,_ = log_mmd_metrics(batch, adjs_recon, key='ae val')
                 #     # print(f"reconstruction mmd at val epoch {epoch}: {metrics}")
                     
@@ -576,7 +577,7 @@ class Trainer:
             # 在有效位置中进行mask（包括内容和EOS）
             num_mask = math.floor(self.mask_gamma(np.random.uniform()) * seq_len)
             mask_scores = torch.rand(modified_indices.shape, device=indices.device)
-            mask_scores = mask_scores.masked_fill(~valid_positions, float('-inf'))  #! 只将pad位置的分数设为负无穷
+            mask_scores = mask_scores.masked_fill(~valid_positions, float('-inf'))  #只将pad位置的分数设为负无穷
             random_indices = mask_scores.topk(k=min(num_mask, lengths.max()), dim=1).indices #要被mask的索引
 
             # 创建mask
@@ -792,7 +793,7 @@ class Trainer:
         # else:
         # if train:
         #     loss.backward()
-        #     # todo 梯度裁剪
+        #     # todo
         #     # torch.nn.utils.clip_grad_norm_(self.transformer.parameters(), max_norm=1.0)
         #     self.opt.step()
         #     log_step_prior(self.metrics, loss, train)
